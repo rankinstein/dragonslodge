@@ -2,6 +2,9 @@
   "name": "dragonslodge",
   "version": "1.0.0",
   "description": "Upload for photos",
+    "engines": {
+        "node": "6.2.2"
+    },
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
