@@ -5,4 +5,7 @@ app.get('/', (req, res) => {
     res.send('hello there!')
 })
 
-app.listen(3000, () => console.log('Listening on post 3000'))
+// start the server
+app.listen(process.env.PORT || 8080, () => {
+  console.log('%s listening at %s', server.name, server.url);
+});
