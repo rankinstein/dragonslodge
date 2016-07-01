@@ -5,7 +5,8 @@ app.get('/', (req, res) => {
     res.send('hello there!')
 })
 
+const port = process.env.PORT || 8080
 // start the server
-app.listen(process.env.PORT || 8080, () => {
-  console.log('%s listening at %s', server.name, server.url);
+const server = app.listen(port, () => {
+  console.log('listening at '+ port)
 });
